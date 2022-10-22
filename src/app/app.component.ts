@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `<button (click)="toggle()">
+  {{isButtonOn ? 'On' : 'Off'}}
+</button>`,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
