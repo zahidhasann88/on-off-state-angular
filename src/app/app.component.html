@@ -1,4 +1,6 @@
-<button (click)="toggle()">ON</button>
+<button (click)="toggle()">
+    {{isButtonOn ? 'On' : 'Off'}}
+</button>
 <h3 *ngIf="display">Hello</h3>
 
 <h3>{{title}}</h3>
