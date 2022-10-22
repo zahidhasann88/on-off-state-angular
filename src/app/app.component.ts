@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test';
+  count=0;
+  display=false;
+  toggle(){
+    this.display =! this.display;
+  }
+  counter(type: string){
+    type==='add'?this.count++:this.count--
+  }
 }
